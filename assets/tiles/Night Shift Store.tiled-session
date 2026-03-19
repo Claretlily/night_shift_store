@@ -1,0 +1,56 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "grocery-store.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "Night Shift Map 2.tsx": {
+            "scaleInDock": 0.9834,
+            "scaleInEditor": 1
+        },
+        "Night Shift Tile Map.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "NightShift Shadowless.tsx": {
+            "scaleInDock": 0.589,
+            "scaleInEditor": 1
+        },
+        "building.tsx": {
+            "scaleInDock": 0.3915,
+            "scaleInEditor": 1
+        },
+        "grocery-store.tmx": {
+            "scale": 0.32,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 965.625,
+                "y": 1025
+            }
+        }
+    },
+    "last.imagePath": "/Users/alto/dev/CS50FinalProject/night_shift_store/assets/images/1_Interiors/32x32/Theme_Sorter_Shadowless_32x32",
+    "map.height": 34,
+    "map.lastUsedFormat": "tmx",
+    "map.width": 60,
+    "openFiles": [
+        "Night Shift Map 2.tsx",
+        "building.tsx",
+        "grocery-store.tmx",
+        "Night Shift Tile Map.tsx",
+        "NightShift Shadowless.tsx"
+    ],
+    "project": "Night Shift Store.tiled-project",
+    "recentFiles": [
+        "Night Shift Map 2.tsx",
+        "building.tsx",
+        "NightShift Shadowless.tsx",
+        "Night Shift Tile Map.tsx",
+        "grocery-store.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx"
+}

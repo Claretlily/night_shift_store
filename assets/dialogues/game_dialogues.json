@@ -1,0 +1,31 @@
+{
+    "intro": [
+        {
+            "speaker": "Dan",
+            "portrait": "assets/portraits/dan_portrait.png",
+            "text": "Sigh...Another tiring night shift....."
+        },
+        {
+            "speaker": "Dan",
+            "portrait": "assets/portraits/dan_portrait.png",
+            "text": "Why do they always assign me to the late hours?"
+        },
+        {
+            "speaker": "Dan",
+            "portrait": "assets/portraits/dan_portrait.png",
+            "text": "This place feels strange at night."
+        },
+        {
+            "speaker": "Dan",
+            "portrait": "assets/portraits/dan_portrait.png",
+            "text": "Alright... let's get started."
+        }
+    ],
+    "start_shift": [
+        {
+            "speaker": "Dan",
+            "portrait": "assets/portraits/dan_portrait.png",
+            "text": "Sigh....let's get this over with before the customers come."
+        }
+    ]
+}
