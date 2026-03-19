@@ -3,11 +3,13 @@ import 'package:flame/game.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:night_shift_store/dialogues/clockin_dialogue.dart';
+import 'package:night_shift_store/dialogues/opening_time_dialogue.dart';
 import 'package:night_shift_store/dialogues/startshift_dialogue.dart';
 import 'package:night_shift_store/night_shift.dart';
 import 'package:night_shift_store/dialogues/intro_dialogue.dart';
 import 'package:night_shift_store/util/interact_prompt.dart';
 import 'package:night_shift_store/util/restock_progress.dart';
+import 'package:night_shift_store/util/sales_task_panel.dart';
 import 'package:night_shift_store/util/shift_completed.dart';
 import 'package:night_shift_store/util/task_panel.dart';
 
@@ -44,6 +46,15 @@ void main() {
             },
             'ShiftComplete': (context, NightShift game) {
               return ShiftCompleted(game: game);
+            },
+            'OpeningTimeDialogue': (context, NightShift game) {
+              return OpeningTimeDialogue(game: game);
+            },
+            'SalesTaskPanel': (context, NightShift game) {
+              return SalesTaskPanel(game: game);
+            },
+            'CheckoutDialogue': (context, NightShift game) {
+              return const SizedBox();
             },
           },
         ),

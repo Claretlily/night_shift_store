@@ -27,5 +27,81 @@
             "portrait": "assets/portraits/dan_portrait.png",
             "text": "Sigh....let's get this over with before the customers come."
         }
+    ],
+    "opening_time": [
+        {
+            "speaker": "Dan",
+            "portrait": "assets/portraits/dan_portrait.png",
+            "text": "Alright, let's get through this."
+        }
+    ],
+    "checkout_adam": [
+        {
+            "speaker": "Adam",
+            "portrait": "assets/portraits/Adam.png",
+            "text": "Just these, please"
+        },
+        {
+            "speaker": "Dan",
+            "portrait": "assets/portraits/dan_portrait.png",
+            "text": "Sure, that'll be right up."
+        },
+        {
+            "speaker": "Adam",
+            "portrait": "assets/portraits/Adam.png",
+            "text": "You know... you're always here at night."
+        },
+        {
+            "speaker": "Adam",
+            "portrait": "assets/portraits/Adam.png",
+            "text": "Don't you ever wonder why no one else works this shift?"
+        },
+        {
+            "speaker": "Dan",
+            "portrait": "assets/portraits/dan_portrait.png",
+            "text": "I... just got assigned to it."
+        },
+        {
+            "speaker": "Adam",
+            "portrait": "assets/portraits/Adam.png",
+            "text": "Right. Of course you did."
+        },
+        {
+            "speaker": "Dan",
+            "portrait": "assets/portraits/dan_portrait.png",
+            "text": "Thanks for coming."
+        }
+    ],
+    "checkout_alex": [
+        {
+            "speaker": "Alex",
+            "portrait": "assets/portraits/Alex.png",
+            "text": "Hey... have you heard?"
+        },
+        {
+            "speaker": "Dan",
+            "portrait": "assets/portraits/dan_portrait.png",
+            "text": "Heard what?"
+        },
+        {
+            "speaker": "Alex",
+            "portrait": "assets/portraits/Alex.png",
+            "text": "About the one who worked here before you."
+        },
+        {
+            "speaker": "Dan",
+            "portrait": "assets/portraits/dan_portrait.png",
+            "text": "I didn't know anyone worked this shift before me."
+        },
+        {
+            "speaker": "Alex",
+            "portrait": "assets/portraits/Alex.png",
+            "text": "Exactly."
+        },
+        {
+            "speaker": "Dan",
+            "portrait": "assets/portraits/Alex.png",
+            "text": "Thanks for coming."
+        }
     ]
 }

@@ -1,19 +1,17 @@
-import 'package:night_shift_store/night_shift.dart';
 import 'package:flutter/material.dart';
+import 'package:night_shift_store/night_shift.dart';
 
-class TaskPanel extends StatelessWidget {
+class SalesTaskPanel extends StatelessWidget {
   final NightShift game;
-
-  const TaskPanel({super.key, required this.game});
+  const SalesTaskPanel({super.key, required this.game});
 
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder<int>(
-      valueListenable: game.restockNotifier,
+      valueListenable: game.salesNotifier,
       builder: (context, _, _) {
-        final tasks = game.restockTasks;
-        final completed = game.completedTaskCount;
-        final total = tasks.length;
+        final sold = game.itemsSold;
+        final quota = game.itemQuota;
 
         return Align(
           alignment: Alignment.topRight,
@@ -32,57 +30,52 @@ class TaskPanel extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Text(
-                    'Night Shift Tasks',
+                    'Sales Quota',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 20,
+                      fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+                  SizedBox(height: 4),
                   Text(
-                    '$completed/$total',
-                    style: const TextStyle(
-                      color: Colors.amber,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    'Items sold: $sold / $quota',
+                    style: const TextStyle(color: Colors.amber, fontSize: 14),
                   ),
-                  SizedBox(height: 6),
+                  SizedBox(height: 8),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(4),
                     child: LinearProgressIndicator(
-                      value: total > 0 ? completed / total : 0,
+                      value: sold / quota,
                       minHeight: 6,
                       backgroundColor: Colors.white24,
-                      valueColor: const AlwaysStoppedAnimation(Colors.amber),
+                      color: Colors.amber,
                     ),
                   ),
                   SizedBox(height: 12),
                   const Divider(color: Colors.white24, height: 1),
-                  SizedBox(height: 10),
-                  ...tasks.map(
-                    (task) => Padding(
+                  SizedBox(height: 8),
+                  // Quota checklist
+                  ...List.generate(
+                    quota,
+                    (i) => Padding(
                       padding: const EdgeInsets.only(bottom: 6),
                       child: Row(
                         children: [
                           Icon(
-                            task.isCompleted
+                            i < sold
                                 ? Icons.check_circle
                                 : Icons.radio_button_unchecked,
-                            color: task.isCompleted
-                                ? Colors.green
-                                : Colors.white54,
+                            color: i < sold ? Colors.green : Colors.white54,
                             size: 16,
                           ),
                           SizedBox(width: 8),
                           Text(
-                            task.shelfID,
+                            'Customer ${i + 1}',
                             style: TextStyle(
-                              color: task.isCompleted
-                                  ? Colors.white38
-                                  : Colors.white,
+                              color: i < sold ? Colors.white38 : Colors.white,
                               fontSize: 13,
-                              decoration: task.isCompleted
+                              decoration: i < sold
                                   ? TextDecoration.lineThrough
                                   : null,
                               decorationColor: Colors.white38,
