@@ -62,3 +62,12 @@ lcov.info
 
 # Logs
 *.log
+
+# Large unused asset folders
+assets/images/1_Interiors/
+assets/images/3_Animated_objects/
+assets/images/4_User_Interface_Elements/
+assets/images/6_Home_Designs/
+assets/images/Palettes/
+assets/images/tiles/
+assets/audio/title_bgm.wav
