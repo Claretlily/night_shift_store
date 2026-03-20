@@ -18,10 +18,15 @@
         {
             "speaker": "Dan",
             "portrait": "assets/portraits/dan_portrait.png",
-            "text": "Alright... let's get started."
+            "text": "Alright... let's get started and go clock in at the cashier."
         }
     ],
     "start_shift": [
+        {
+            "speaker": "Dan",
+            "portrait": "assets/portraits/Dan_portrait.png",
+            "text": "It looks like I have to restock the shevles."
+        },
         {
             "speaker": "Dan",
             "portrait": "assets/portraits/dan_portrait.png",
@@ -100,8 +105,13 @@
         },
         {
             "speaker": "Dan",
-            "portrait": "assets/portraits/Alex.png",
-            "text": "Thanks for coming."
+            "portrait": "assets/portraits/Dan_portrait.png",
+            "text": "...Thanks for coming."
+        },
+        {
+            "speaker": "Dan",
+            "portrait": "assets/portraits/Dan_portrait.png",
+            "text": "Such weird customers...."
         }
     ]
 }

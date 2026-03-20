@@ -39,10 +39,6 @@ class _CheckoutDialogueState extends State<CheckoutDialogue> {
       // Dialogue finished
       widget.game.overlays.remove('CheckoutDialogue');
       widget.game.onItemSold();
-
-      // Remove the customer from the world
-      widget.game.activeCheckoutCustomer?.removeFromParent();
-      widget.game.activeCheckoutCustomer = null;
     }
   }
 

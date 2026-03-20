@@ -54,6 +54,7 @@ class ShiftCompleted extends StatelessWidget {
                 game.shiftStarted = false;
                 game.restockTasks.clear();
                 game.overlays.remove('ShiftComplete');
+                game.onGameEnd();
               },
               child: const Text(
                 'End Shift',

@@ -13,9 +13,12 @@ import 'package:collection/collection.dart';
 
 class NightShift extends FlameGame
     with HasKeyboardHandlerComponents, HasCollisionDetection {
+  final VoidCallback onGameEnd;
+  NightShift({required this.onGameEnd});
   late TiledComponent mapComponent;
   List<RestockTask> restockTasks = [];
   List<InteractionArea> interactions = [];
+  final List<Customer> _checkoutQueue = [];
   InteractionArea? currentInteraction;
   Customer? activeCheckoutCustomer;
 
@@ -196,14 +199,23 @@ class NightShift extends FlameGame
   }
 
   void triggerCheckout(Customer customer) {
-    // Don't show dialogue immediately — wait for Dan to press E
-    activeCheckoutCustomer = customer;
-    // Optional: show a notification that a customer is waiting
+    // Don't show dialogue immediately and wait for Dan to press E
+    _checkoutQueue.add(customer);
+    _processCheckoutQueue();
+  }
+
+  void _processCheckoutQueue() {
+    if (activeCheckoutCustomer != null) return;
+    if (_checkoutQueue.isEmpty) return;
+    activeCheckoutCustomer = _checkoutQueue.removeAt(0);
   }
 
   void onItemSold() {
     itemsSold++;
     salesNotifier.value++;
+    activeCheckoutCustomer?.removeFromParent();
+    activeCheckoutCustomer = null;
+    _processCheckoutQueue();
     if (quotaMet) {
       overlays.remove('SalesTaskPanel');
       overlays.add('ShiftComplete');
@@ -220,6 +232,9 @@ class NightShift extends FlameGame
     if (event.logicalKey == LogicalKeyboardKey.keyE) {
       if (event is KeyDownEvent) {
         final action = currentInteraction?.action;
+        debugPrint(
+          'KEY E PRESSED — action: $action, shiftStarted: $shiftStarted, customer: $activeCheckoutCustomer',
+        );
 
         if (action == 'Clock In') {
           if (!shiftStarted) {
@@ -233,7 +248,7 @@ class NightShift extends FlameGame
           }
         }
 
-        if (action == 'Restock' && shiftStarted) {
+        if (action == 'Restock' && shiftStarted && !allTaskDone) {
           isHoldingInteract = true;
         }
       }
@@ -278,7 +293,7 @@ class NightShift extends FlameGame
         // Dan is at cashier and customer is waiting
         interactText = 'Checkout';
         show = true;
-      } else if (action == 'Restock' && shiftStarted) {
+      } else if (action == 'Restock' && shiftStarted && !allTaskDone) {
         interactText = 'Restock';
         show = true;
       }

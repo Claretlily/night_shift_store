@@ -33,7 +33,7 @@ class Customer extends SpriteAnimationGroupComponent<CustomerState>
   final int _maxShelves = 2;
   late TextComponent _bubble;
 
-  // Simple waypoint queue
+  // waypoint queue
   List<Vector2> _path = [];
   bool _hasTarget = false;
   Vector2 _target = Vector2.zero();
