@@ -1,5 +1,5 @@
 # NightShift
-#### Video Demo: <URL HERE>
+#### Video Demo: <URL https://youtu.be/xJlJrfTxXzM>
 #### Description:
 
 NightShift is a 2D top-down grocery store simulation game built with Flutter and the Flame game engine. You play as Dan, a worker assigned to the late night shift at a grocery store. The store feels a little too quiet. The customers feel a little too strange. But the shelves still need restocking, and the till still needs manning.

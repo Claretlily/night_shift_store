@@ -10,6 +10,7 @@ import 'package:night_shift_store/actor/player.dart';
 import 'package:night_shift_store/system/interaction_area.dart';
 import 'package:night_shift_store/system/restock_shelf.dart';
 import 'package:collection/collection.dart';
+import 'package:flame_audio/flame_audio.dart';
 
 class NightShift extends FlameGame
     with HasKeyboardHandlerComponents, HasCollisionDetection {
@@ -63,6 +64,8 @@ class NightShift extends FlameGame
     //debugMode = true;
     await super.onLoad();
     await images.loadAllImages();
+    await FlameAudio.bgm.initialize();
+    await FlameAudio.bgm.play('game_bgm.wav', volume: 0.2);
 
     mapComponent = await TiledComponent.load(
       'grocery-store.tmx',
@@ -217,6 +220,7 @@ class NightShift extends FlameGame
     activeCheckoutCustomer = null;
     _processCheckoutQueue();
     if (quotaMet) {
+      FlameAudio.bgm.stop();
       overlays.remove('SalesTaskPanel');
       overlays.add('ShiftComplete');
     }

@@ -155,7 +155,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="7" name="Interactions">
+ <objectgroup id="7" name="Interactions" visible="0">
   <object id="290" name="cashier_clockin" x="1597.35" y="437.914" width="32" height="32">
    <properties>
     <property name="action" value="Clock In"/>
@@ -202,7 +202,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="6" name="Collisions">
+ <objectgroup id="6" name="Collisions" visible="0">
   <object id="155" x="1409.97" y="837.402" width="63.6189" height="39.9467"/>
   <object id="160" x="1227.99" y="441.295" width="42.9058" height="390.189"/>
   <object id="161" x="1214.68" y="832.963" width="65.0984" height="47.3443"/>

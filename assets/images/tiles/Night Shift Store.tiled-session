@@ -18,11 +18,11 @@
             "scaleInEditor": 1
         },
         "/Users/alto/dev/CS50FinalProject/night_shift_store/assets/tiles/grocery-store.tmx": {
-            "scale": 0.7079,
+            "scale": 0.2938,
             "selectedLayer": 4,
             "viewCenter": {
-                "x": 1301.0312190987427,
-                "y": 530.4421528464472
+                "x": 1015.997277059224,
+                "y": 578.6249149081009
             }
         },
         "Night Shift Map 2.tsx": {

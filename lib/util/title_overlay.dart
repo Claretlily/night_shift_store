@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 class TitleOverlay extends StatelessWidget {
   final VoidCallback onStart;
-
   const TitleOverlay({super.key, required this.onStart});
 
   @override
@@ -44,8 +43,6 @@ class TitleOverlay extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 60),
-
-                // Start button
                 GestureDetector(
                   onTap: onStart,
                   child: Container(
