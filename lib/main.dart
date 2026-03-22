@@ -19,7 +19,7 @@ import 'package:night_shift_store/util/title_overlay.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   Flame.device.fullScreen();
-  Flame.device.setLandscape();
+  //Flame.device.setLandscape();
   runApp(const NightShiftApp());
 }
 
