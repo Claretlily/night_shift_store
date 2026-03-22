@@ -43,7 +43,7 @@
     "checkout_adam": [
         {
             "speaker": "Adam",
-            "portrait": "assets/portraits/Adam.png",
+            "portrait": "assets/portraits/adam.png",
             "text": "Just these, please"
         },
         {
@@ -53,12 +53,12 @@
         },
         {
             "speaker": "Adam",
-            "portrait": "assets/portraits/Adam.png",
+            "portrait": "assets/portraits/adam.png",
             "text": "You know... you're always here at night."
         },
         {
             "speaker": "Adam",
-            "portrait": "assets/portraits/Adam.png",
+            "portrait": "assets/portraits/adam.png",
             "text": "Don't you ever wonder why no one else works this shift?"
         },
         {
@@ -68,7 +68,7 @@
         },
         {
             "speaker": "Adam",
-            "portrait": "assets/portraits/Adam.png",
+            "portrait": "assets/portraits/adam.png",
             "text": "Right. Of course you did."
         },
         {
@@ -80,7 +80,7 @@
     "checkout_alex": [
         {
             "speaker": "Alex",
-            "portrait": "assets/portraits/Alex.png",
+            "portrait": "assets/portraits/alex.png",
             "text": "Hey... have you heard?"
         },
         {
@@ -90,7 +90,7 @@
         },
         {
             "speaker": "Alex",
-            "portrait": "assets/portraits/Alex.png",
+            "portrait": "assets/portraits/alex.png",
             "text": "About the one who worked here before you."
         },
         {
@@ -100,17 +100,17 @@
         },
         {
             "speaker": "Alex",
-            "portrait": "assets/portraits/Alex.png",
+            "portrait": "assets/portraits/alex.png",
             "text": "Exactly."
         },
         {
             "speaker": "Dan",
-            "portrait": "assets/portraits/Dan_portrait.png",
+            "portrait": "assets/portraits/dan_portrait.png",
             "text": "...Thanks for coming."
         },
         {
             "speaker": "Dan",
-            "portrait": "assets/portraits/Dan_portrait.png",
+            "portrait": "assets/portraits/dan_portrait.png",
             "text": "Such weird customers...."
         }
     ]

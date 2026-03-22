@@ -70,6 +70,7 @@ class _NightShiftAppState extends State<NightShiftApp> {
 
     final game = _game!;
     return MaterialApp(
+      title: "Night Shift",
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: GameWidget(

@@ -67,6 +67,14 @@ class NightShift extends FlameGame
     await FlameAudio.bgm.initialize();
     await FlameAudio.bgm.play('game_bgm.wav', volume: 0.2);
 
+    // final background = await images.load('assets/images/tiled_bg.png');
+    // final backgroundComponent = SpriteComponent(
+    //   sprite: Sprite(background),
+    //   size: Vector2.all(32),
+    //   priority: -1, // Ensure it is rendered behind the tile map
+    // );
+    // add(backgroundComponent);
+
     mapComponent = await TiledComponent.load(
       'grocery-store.tmx',
       Vector2.all(32),

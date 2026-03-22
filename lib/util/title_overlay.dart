@@ -10,16 +10,6 @@ class TitleOverlay extends StatelessWidget {
       backgroundColor: Colors.black,
       body: Stack(
         children: [
-          Positioned.fill(
-            child: Image.asset(
-              'assets/images/title_bg.png',
-              fit: BoxFit.cover,
-              color: Colors.black.withValues(alpha: 0.5),
-              colorBlendMode: BlendMode.darken,
-              errorBuilder: (_, _, _) =>
-                  Container(color: const Color(0xFF0a0a0a)),
-            ),
-          ),
           Center(
             child: Column(
               mainAxisSize: MainAxisSize.min,
